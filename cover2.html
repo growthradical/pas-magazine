@@ -1,0 +1,113 @@
+<!doctype html><html lang="mk"><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="brand.css">
+<style>
+.page{width:216mm;height:303mm;position:relative}
+.bg{position:absolute;inset:0;z-index:0}
+.bg img{width:100%;height:100%;object-fit:cover;object-position:50% 33%;display:block}
+.scrim-top{position:absolute;left:0;right:0;top:0;height:74mm;z-index:1;
+  background:linear-gradient(180deg,rgba(236,228,212,.96) 0%,rgba(236,228,212,.80) 38%,rgba(236,228,212,0) 100%)}
+.scrim-bot{position:absolute;left:0;right:0;bottom:0;height:170mm;z-index:1;
+  background:linear-gradient(180deg,rgba(18,10,10,0) 0%,rgba(18,10,10,.28) 40%,rgba(16,9,9,.82) 72%,rgba(12,7,7,.96) 100%)}
+.layer{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;
+  padding:11mm 12mm 11mm 12mm}
+
+/* MASTHEAD */
+.mast{display:flex;align-items:flex-start;justify-content:space-between}
+.mast .pas{font-family:'Oswald';font-weight:700;font-size:118px;line-height:.74;letter-spacing:-2px;color:var(--ink)}
+.mast .tagline{font-family:'PTSansNarrow';font-weight:700;text-transform:uppercase;
+  letter-spacing:.34em;font-size:12px;color:var(--ink);margin-top:3mm;padding-left:2px}
+.meta{text-align:right;padding-top:3mm}
+.meta .m1{font-family:'Oswald';font-weight:600;text-transform:uppercase;font-size:18px;line-height:1.15;letter-spacing:.04em}
+.meta .m1 b{color:var(--red)}
+.meta .price{margin-top:2mm;font-family:'PTSansNarrow';font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:13px;color:var(--red)}
+.mrule{height:2.2mm;background:var(--ink);margin-top:2mm;width:48mm;margin-left:auto}
+
+/* SEAL */
+.seal{width:34mm;height:34mm;margin-top:7mm}
+.seal svg{width:100%;height:100%;filter:drop-shadow(0 1px 2px rgba(0,0,0,.35))}
+
+/* COVERLINE */
+.cover-area{margin-top:auto}
+.cl-name{font-family:'Oswald';font-weight:700;text-transform:uppercase;color:var(--red);
+  font-size:74px;line-height:.82;letter-spacing:-1px;text-shadow:0 2px 6px rgba(0,0,0,.45)}
+.cl-deck{font-family:'Oswald';font-weight:600;text-transform:uppercase;color:#fff;
+  font-size:40px;line-height:.92;letter-spacing:0;margin-top:3mm;text-shadow:0 2px 6px rgba(0,0,0,.55)}
+.cl-deck em{font-style:normal;color:var(--gold)}
+
+/* TILES */
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:5mm;margin-top:7mm}
+.tile{display:flex;background:rgba(20,12,11,.55);border:.6mm solid rgba(255,255,255,.16);
+  border-left:2mm solid var(--red);min-height:30mm;overflow:hidden}
+.tile .pic{flex:0 0 26mm;overflow:hidden;border-right:.6mm solid rgba(255,255,255,.16)}
+.tile .pic img{width:100%;height:100%;object-fit:cover;display:block}
+.tile .txt{padding:3.5mm 4mm;display:flex;flex-direction:column;justify-content:center;gap:1.5mm}
+.tile .txt .h{font-family:'Oswald';font-weight:700;text-transform:uppercase;color:#fff;font-size:18px;line-height:.94}
+.tile .txt .h em{font-style:normal;color:var(--red)}
+.tile .txt p{font-family:'PTSans';font-size:11px;line-height:1.25;color:rgba(255,255,255,.82)}
+.barcode{position:absolute;right:12mm;bottom:5mm;z-index:3;height:8mm;width:30mm;opacity:.9;
+  background:repeating-linear-gradient(90deg,#fff 0 1px,transparent 1px 2px,#fff 2px 4px,transparent 4px 7px,#fff 7px 8px,transparent 8px 11px)}
+</style></head>
+<body>
+<div class="page">
+  <div class="bg"><img src="img/ringov_color.jpg" alt="Васил Рингов"></div>
+  <div class="scrim-top"></div>
+  <div class="scrim-bot"></div>
+
+  <div class="layer">
+    <!-- masthead -->
+    <div class="mast">
+      <div>
+        <div class="pas">ПАС</div>
+        <div class="tagline">Фудбал · Култура · Идентитет</div>
+        <!-- seal -->
+        <div class="seal">
+          <svg viewBox="0 0 200 200">
+            <defs><path id="circ" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
+            <circle cx="100" cy="100" r="86" fill="#ece4d4" stroke="#b3122b" stroke-width="3"/>
+            <circle cx="100" cy="100" r="78" fill="none" stroke="#1a1512" stroke-width="1.4"/>
+            <circle cx="100" cy="100" r="52" fill="none" stroke="#b3122b" stroke-width="1.2" stroke-dasharray="2 3"/>
+            <text font-family="PTSansNarrow" font-weight="700" font-size="14.5" letter-spacing="2.2" fill="#1a1512">
+              <textPath href="#circ" startOffset="2%">АРХИВСКА ФОТОГРАФИЈА · ЗА ИСТОРИЈАТА ·</textPath>
+            </text>
+            <path d="M100 66 l3.2 7 7.6 .8 -5.6 5.4 1.5 7.6 -6.7 -3.8 -6.7 3.8 1.5 -7.6 -5.6 -5.4 7.6 -.8 z" fill="#d29a32"/>
+            <text x="100" y="108" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="17" fill="#b3122b" letter-spacing="-.3">РЕСТАВРИРАНО</text>
+            <path d="M64 118 L136 118" stroke="#1a1512" stroke-width="1.2"/>
+            <text x="100" y="131" text-anchor="middle" font-family="PTSansNarrow" font-weight="700" font-size="11" fill="#1a1512" letter-spacing="2">1987</text>
+          </svg>
+        </div>
+      </div>
+      <div class="meta">
+        <div class="m1">Јуни <b>2026</b><br>Број <b>01</b></div>
+        <div class="price">Цена · 150 ден.</div>
+        <div class="mrule"></div>
+      </div>
+    </div>
+
+    <!-- coverline -->
+    <div class="cover-area">
+      <div class="cl-name">Васил Рингов:</div>
+      <div class="cl-deck">Македонска легенда<br>од ладовината на Градски</div>
+
+      <!-- tiles -->
+      <div class="tiles">
+        <div class="tile">
+          <div class="pic"><img src="img/thumb_boot.jpg" alt=""></div>
+          <div class="txt">
+            <div class="h">Македонија <em>на</em> Светско</div>
+            <p>Локален дизајнер ги дизајнираше копачките на Џеко.</p>
+          </div>
+        </div>
+        <div class="tile">
+          <div class="pic"><img src="img/thumb_stadium.jpg" alt=""></div>
+          <div class="txt">
+            <div class="h">Вардар, Шкендија <em>и</em> Силекс</div>
+            <p>Трите клуба на европско сценарио.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="barcode"></div>
+</div>
+</body></html>

@@ -14,7 +14,9 @@ rules and framed devices.
 | Path | What |
 |------|------|
 | `brandkit.html` / `out/PAS_brandkit.pdf` | Brand-book sheet (logo, palette, type, elements) |
-| `cover.html` / `out/PAS_01_cover.pdf` | Cover #01, print-ready |
+| `cover.html` / `out/PAS_01_cover.pdf` | Cover #01 — boxed layout (v1) |
+| `cover2.html` / `out/PAS_01_cover_v2.pdf` | Cover #01 — full-bleed layout (v2): restored-archival seal, overlaid coverline, photo-thumb tiles |
+| `grade2.py` | Restored-colour (warm) grade for the full-bleed cover |
 | `brand.css` | Design tokens + components |
 | `fonts.css` | Base64-embedded fonts (self-contained render) |
 | `grade.py` | 80s-magazine duotone/halftone photo grade |
