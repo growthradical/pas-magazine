@@ -1,0 +1,6 @@
+.cr/
+deliver/
+__pycache__/
+*.pyc
+.ghlogin.log
+.commitmsg

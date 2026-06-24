@@ -1,0 +1,126 @@
+<!doctype html><html lang="mk"><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="brand.css">
+<style>
+.page{width:216mm;height:303mm;padding:14mm 14mm 12mm 14mm;display:flex;flex-direction:column;gap:7mm}
+.bk-head{display:flex;align-items:flex-end;justify-content:space-between}
+.bk-head .l .pas{font-family:'Oswald';font-weight:700;font-size:64px;line-height:.8;letter-spacing:-1px}
+.bk-head .l .sub{font-family:'PTSansNarrow';font-weight:700;text-transform:uppercase;letter-spacing:.22em;font-size:12px;margin-top:2mm}
+.bk-head .r{text-align:right;font-family:'PTSansNarrow';font-weight:700;text-transform:uppercase;letter-spacing:.2em;font-size:12px;color:var(--red)}
+.bk-head .r b{display:block;font-family:'Oswald';font-size:20px;color:var(--ink);letter-spacing:0}
+.sechead{font-family:'PTSansNarrow';font-weight:700;text-transform:uppercase;letter-spacing:.2em;font-size:13px;
+  display:flex;align-items:center;gap:3mm;margin-bottom:3mm}
+.sechead::after{content:"";flex:1;height:1.4mm;background:var(--ink)}
+.sechead .n{color:var(--red)}
+
+.grid2{display:grid;grid-template-columns:1.05fr 1fr;gap:9mm}
+/* logo block */
+.logobox{border:1.1mm solid var(--ink);padding:7mm;display:flex;flex-direction:column;gap:6mm;background:var(--paper)}
+.lockup{display:flex;align-items:center;gap:5mm}
+.lockup .emb{width:24mm;height:24mm;border:1.1mm solid var(--ink);display:flex;align-items:center;justify-content:center}
+.lockup .emb svg{width:74%;height:74%}
+.lockup .pas{font-family:'Oswald';font-weight:700;font-size:96px;line-height:.7;letter-spacing:-1px}
+.frames{display:flex;gap:5mm}
+.frame{flex:1;aspect-ratio:1/1;border:.9mm solid var(--ink);display:flex;align-items:center;justify-content:center;position:relative}
+.frame span{font-family:'Oswald';font-weight:700;font-size:60px}
+.frame small{position:absolute;bottom:1.5mm;left:0;right:0;text-align:center;font-family:'PTSansNarrow';font-weight:700;font-size:9px;letter-spacing:.1em;color:var(--ink-2)}
+.knockout{background:var(--ink)}.knockout span{color:var(--paper)}
+.redf{background:var(--red)}.redf span{color:#fff}
+
+/* palette */
+.swatches{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.sw{border:1.1mm solid var(--ink);overflow:hidden}
+.sw .chip{height:26mm}
+.sw .meta{padding:2.5mm 3mm;background:var(--paper)}
+.sw .meta .nm{font-family:'Oswald';font-weight:600;text-transform:uppercase;font-size:14px}
+.sw .meta .hx{font-family:'PTSans';font-size:10.5px;color:var(--ink-2);letter-spacing:.03em}
+
+/* type scale */
+.type .row{border-bottom:.5mm solid rgba(0,0,0,.25);padding:3.5mm 0;display:flex;align-items:baseline;gap:5mm}
+.type .row .lab{flex:0 0 36mm;font-family:'PTSansNarrow';font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:10.5px;color:var(--ink-2)}
+.type .row .lab b{display:block;color:var(--red);font-size:12px}
+.type .samp-osw{font-family:'Oswald';font-weight:700}
+.type .samp-osw2{font-family:'Oswald';font-weight:500}
+.type .samp-ptn{font-family:'PTSansNarrow';font-weight:700;text-transform:uppercase;letter-spacing:.1em}
+.type .samp-pts{font-family:'PTSans'}
+.type .samp-ser{font-family:'PTSerif';font-weight:700}
+
+/* elements row */
+.elems{display:grid;grid-template-columns:repeat(4,1fr);gap:5mm}
+.el{border:1.1mm solid var(--ink);min-height:30mm;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3mm;padding:4mm;background:var(--paper)}
+.el svg{width:18mm;height:18mm}
+.el .cap{font-family:'PTSansNarrow';font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:9.5px;text-align:center}
+.tagsrow{display:flex;gap:3mm;flex-wrap:wrap}
+.foot{margin-top:auto;display:flex;justify-content:space-between;font-family:'PTSansNarrow';font-weight:700;text-transform:uppercase;letter-spacing:.18em;font-size:10px;color:var(--ink-2)}
+</style></head>
+<body>
+<div class="page">
+  <svg width="0" height="0" style="position:absolute"><defs>
+    <symbol id="pass" viewBox="0 0 100 100">
+      <circle cx="33" cy="50" r="20" fill="#b3122b"/>
+      <path d="M33 30 L40 44 L33 50 L26 44 Z" fill="#1a1512"/>
+      <path d="M56 50 H92" stroke="#1a1512" stroke-width="7" fill="none"/>
+      <path d="M82 38 L96 50 L82 62" stroke="#1a1512" stroke-width="7" fill="none"/>
+    </symbol>
+    <symbol id="star" viewBox="0 0 100 100"><path d="M50 6 L61 38 L95 38 L67 58 L78 92 L50 71 L22 92 L33 58 L5 38 L39 38 Z" fill="#d29a32"/></symbol>
+    <symbol id="ball" viewBox="0 0 100 100"><circle cx="50" cy="50" r="34" fill="none" stroke="#1a1512" stroke-width="5"/>
+      <path d="M50 28 L62 37 L57 52 L43 52 L38 37 Z" fill="#1a1512"/></symbol>
+  </defs></svg>
+
+  <!-- header -->
+  <div class="bk-head">
+    <div class="l"><div class="pas">ПАС</div><div class="sub">Бренд-книга · Издание 01</div></div>
+    <div class="r">Македонски фудбалски месечник<b>Brand Kit · 2026</b></div>
+  </div>
+  <div class="dbl"><div class="r1" style="height:2.4mm;background:var(--ink)"></div><div style="height:.9mm;background:var(--red);margin-top:1.1mm"></div></div>
+
+  <!-- logo + palette -->
+  <div class="grid2">
+    <div>
+      <div class="sechead"><span class="n">01</span> Лого</div>
+      <div class="logobox">
+        <div class="lockup"><div class="emb"><svg><use href="#pass"/></svg></div><div class="pas">ПАС</div></div>
+        <div class="frames">
+          <div class="frame"><span>П</span><small>Основно</small></div>
+          <div class="frame knockout"><span>А</span><small>Негатив</small></div>
+          <div class="frame redf"><span>С</span><small>Акцент</small></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="sechead"><span class="n">02</span> Палета</div>
+      <div class="swatches">
+        <div class="sw"><div class="chip" style="background:var(--paper)"></div><div class="meta"><div class="nm">Хартија</div><div class="hx">#ECE4D4 · C6 M8 Y18 K0</div></div></div>
+        <div class="sw"><div class="chip" style="background:var(--ink)"></div><div class="meta"><div class="nm">Мастило</div><div class="hx">#1A1512 · C0 M0 Y0 K90</div></div></div>
+        <div class="sw"><div class="chip" style="background:var(--red)"></div><div class="meta"><div class="nm">Црвена</div><div class="hx">#B3122B · C18 M100 Y82 K8</div></div></div>
+        <div class="sw"><div class="chip" style="background:var(--gold)"></div><div class="meta"><div class="nm">Злато</div><div class="hx">#D29A32 · C18 M40 Y90 K2</div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- typography -->
+  <div>
+    <div class="sechead"><span class="n">03</span> Типографија</div>
+    <div class="type">
+      <div class="row"><div class="lab">Маст-глава<b>Oswald 700</b></div><div class="samp-osw" style="font-size:46px;line-height:.9">ПАС · ВРЕМЕТО НА ЛИСЕЦОТ</div></div>
+      <div class="row"><div class="lab">Поднаслов<b>Oswald 500</b></div><div class="samp-osw2" style="font-size:26px">Македонски фудбалски месечник</div></div>
+      <div class="row"><div class="lab">Китичка / Ознаки<b>PT Sans Narrow</b></div><div class="samp-ptn" style="font-size:18px">Репрезентација · Европа · Резултати</div></div>
+      <div class="row"><div class="lab">Текст / Потпис<b>PT Sans</b></div><div class="samp-pts" style="font-size:15px">Абвгдѓежзѕијклљмнњопрстќуфхцчџш — 0123456789</div></div>
+      <div class="row" style="border:none"><div class="lab">Цитат<b>PT Serif</b></div><div class="samp-ser" style="font-size:20px">„Фудбалот е игра на простор и време.“</div></div>
+    </div>
+  </div>
+
+  <!-- elements -->
+  <div>
+    <div class="sechead"><span class="n">04</span> Елементи</div>
+    <div class="elems">
+      <div class="el"><svg><use href="#pass"/></svg><div class="cap">Амблем · Пас</div></div>
+      <div class="el"><svg><use href="#star"/></svg><div class="cap">Петокрака</div></div>
+      <div class="el"><svg><use href="#ball"/></svg><div class="cap">Топка</div></div>
+      <div class="el"><div class="tagsrow"><span class="tag">Легенда</span><span class="tag red">Ретро</span></div><div class="cap" style="margin-top:2mm">Ознаки · Рамки · Линии</div></div>
+    </div>
+  </div>
+
+  <div class="foot"><span>ПАС · Бренд-книга</span><span>Скопје · 2026</span></div>
+</div>
+</body></html>

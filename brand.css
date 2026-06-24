@@ -1,0 +1,43 @@
+/* ===== ПАС — BRAND SYSTEM =====
+   Minimalist · Socialist · Yugoslav-Macedonian football monthly */
+:root{
+  --paper:#ece4d4;        /* newsprint cream */
+  --paper-2:#e3d9c4;      /* deeper tone band */
+  --ink:#1a1512;          /* warm near-black */
+  --ink-2:#3a312a;
+  --red:#b3122b;          /* socialist red */
+  --red-dk:#820d1f;
+  --gold:#d29a32;         /* star gold / ochre */
+  --blue:#27485a;         /* muted cold accent */
+  --line:3px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#888}
+.page{
+  position:relative; background:var(--paper); color:var(--ink);
+  overflow:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+/* paper grain */
+.page::after{
+  content:""; position:absolute; inset:0; pointer-events:none; z-index:60;
+  opacity:.05; mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+@page{ size:216mm 303mm; margin:0; }
+
+/* ---- type ---- */
+.osw{font-family:'Oswald',sans-serif}
+.ptn{font-family:'PTSansNarrow',sans-serif;font-weight:700}
+.pts{font-family:'PTSans',sans-serif}
+.serif{font-family:'PTSerif',serif;font-weight:700}
+.kicker{font-family:'PTSansNarrow',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.16em}
+
+/* ---- elements ---- */
+.star{display:inline-block;color:var(--gold)}
+.rule{background:var(--ink);height:var(--line);width:100%}
+.rule.red{background:var(--red)}
+.tag{display:inline-block;background:var(--ink);color:var(--paper);
+  font-family:'PTSansNarrow',sans-serif;font-weight:700;text-transform:uppercase;
+  letter-spacing:.14em;line-height:1;padding:.42em .6em}
+.tag.red{background:var(--red)}
